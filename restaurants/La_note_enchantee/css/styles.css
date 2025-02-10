@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  margin: 0;
+  background: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+.main-header .icon-header {
+  position: absolute;
+  left: 20px;
+}
+.main-header .icon-header a i {
+  font-size: 22px;
+  color: black;
+}
+.main-header .logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.main-header .logo-header .logo-img {
+  margin-top: 8px;
+  width: 160px;
+  height: 28px;
+}
+
+.img-restaurant img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 10px 10px 10px;
+  background: rgb(246, 246, 246);
+  position: relative;
+  bottom: 60px;
+  border-radius: 40px;
+}
+.restaurants .title-restaurant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+}
+.restaurants .title-restaurant h2 {
+  margin: 0;
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40.82px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+.restaurants .title-restaurant i {
+  font-size: 24px;
+}
+.restaurants .title-restaurant .hidden {
+  display: none;
+}
+.restaurants .title-restaurant .heart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px;
+  display: inline-block;
+}
+.restaurants .title-restaurant .heart-icon::before {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: black;
+}
+.restaurants .title-restaurant .hidden:checked + .heart-icon::before {
+  font-weight: 900;
+  background-image: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  transition: scale(1.1);
+}
+
+.menu-restaurant h3 {
+  margin: 0;
+}
+.menu-restaurant .info-menu-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+.menu-restaurant .info-menu-restaurant article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu-restaurant .info-menu-restaurant article .title-menu-restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.menu-restaurant .info-menu-restaurant article .title-menu-restaurant h3 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+.menu-restaurant .info-menu-restaurant article .title-menu-restaurant .stripe {
+  width: 40px;
+  border: 1px solid rgb(153, 226, 208);
+}
+
+.plat-menu-restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+}
+.plat-menu-restaurant .container-plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 69px;
+  position: relative;
+}
+.plat-menu-restaurant .container-plat p {
+  margin: 0;
+  font-size: 15.04px;
+  font-weight: 300;
+  line-height: 17.63px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+}
+.plat-menu-restaurant .container-plat .price {
+  display: flex;
+}
+.plat-menu-restaurant .container-plat .description-prix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-plat {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.main-plat input[type=checkbox]:checked + .container-plat + .price-check {
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+  padding-right: 0px;
+  width: 30%;
+}
+.main-plat input[type=checkbox]:not(:checked) + .container-plat + .price-check {
+  transform: translateX(60%);
+  transition: transform 0.3s ease;
+}
+.main-plat input[type=checkbox]:checked + .container-plat {
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+  width: 70%;
+}
+.main-plat input[type=checkbox]:checked + .container-plat .title-plat h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main-plat input[type=checkbox]:checked + .container-plat .description-prix p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.main-plat input[type=checkbox]:not(:checked) + .container-plat {
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+  width: 90%;
+}
+
+.toggle-check-hidden {
+  display: none;
+}
+
+.menu-check-toggle {
+  width: 100%;
+  cursor: pointer;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-check {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  transform: translateX(40%);
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(153, 226, 208);
+  width: 59px;
+  height: 69px;
+  border-radius: 0px 15px 15px 0px;
+  transform: translateX(0%);
+}
+.check i {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50px;
+  padding: 3px 3.5px 3px 3px;
+  color: white;
+  font-size: 13px;
+}
+
+.info-plat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 20px 10px 10px;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  width: 186px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  cursor: pointer;
+}
+.btn-restaurant:hover {
+  background: linear-gradient(200.64deg, rgba(147, 86, 220, 0.8) -5.2%, rgba(255, 121, 218, 0.8) 110.74%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+.btn-restaurant p {
+  text-align: center;
+}
+.btn-restaurant a {
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+  text-decoration-skip-ink: none;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+  gap: 20px;
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.footer a {
+  color: white;
+}
+.footer .logo-white {
+  filter: brightness(0) invert(1);
+}
+.footer .logo-footer img {
+  width: 137.58px;
+  height: 27px;
+  color: white;
+}
+.footer .info-list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .info-list-footer .info-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+.footer .info-list-footer i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  width: 20px;
+  height: 20px;
+}
+
+.main-plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.container-plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  height: 69px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.price-check {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 10%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.price-check .price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  top: 12px;
+}
+
+/*# sourceMappingURL=styles.css.map */
