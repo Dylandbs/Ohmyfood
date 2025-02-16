@@ -8,17 +8,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>Oh my food</title>
+    <title>Ohmyfood</title>
   </head>
   <body>
     <div id="loader">
       <div class="loader-content">
-        <img src="/assets/images/logo/ohmyfood.png" alt="Logo OhMyFood" class="loader-logo" />
+        <img
+          src="/assets/images/logo/ohmyfood.png"
+          alt="Logo OhMyFood"
+          class="loader-logo"
+        />
         <div class="loader-dots">
-          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
         </div>
       </div>
-    </div> 
+    </div>
     <header>
       <div class="logo-header">
         <img
@@ -35,7 +40,7 @@
     <main>
       <section>
         <div class="info-restaurant">
-          <h2>Réservez le menu qui vous convient</h2>
+          <h1>Réservez le menu qui vous convient</h1>
           <p>
             Découvrez des restaurants d'exception, sélectionnés par nos soins.
           </p>
@@ -101,11 +106,15 @@
               <div class="info-menu">
                 <div class="text-info-menu">
                   <h3>La palette du goût</h3>
-                  <p>Brooklyn</p>
+                  <p>Ménilmontant</p>
                 </div>
                 <div class="hearth-icon-menu">
-                  <input type="checkbox" id="heart-1" class="hidden" />
-                  <label for="heart-1" class="heart-icon"></label>
+                  <div class="heart-icon">
+                    <i class="far fa-heart"></i>
+                    <!-- Cœur vide -->
+                    <i class="fas fa-heart"></i>
+                    <!-- Cœur plein -->
+                  </div>
                 </div>
               </div>
             </article>
@@ -125,8 +134,12 @@
                   <p>Charonne</p>
                 </div>
                 <div class="hearth-icon-menu">
-                  <input type="checkbox" id="heart-2" class="hidden" />
-                  <label for="heart-2" class="heart-icon"></label>
+                  <div class="heart-icon">
+                    <i class="far fa-heart"></i>
+                    <!-- Cœur vide -->
+                    <i class="fas fa-heart"></i>
+                    <!-- Cœur plein -->
+                  </div>
                 </div>
               </div>
             </article>
@@ -145,8 +158,12 @@
                   <p>Cité Rouge</p>
                 </div>
                 <div class="hearth-icon-menu">
-                  <input type="checkbox" id="heart-3" class="hidden" />
-                  <label for="heart-3" class="heart-icon"></label>
+                  <div class="heart-icon">
+                    <i class="far fa-heart"></i>
+                    <!-- Cœur vide -->
+                    <i class="fas fa-heart"></i>
+                    <!-- Cœur plein -->
+                  </div>
                 </div>
               </div>
             </article>
@@ -165,8 +182,12 @@
                   <p>Folie-Méricourt</p>
                 </div>
                 <div class="hearth-icon-menu">
-                  <input type="checkbox" id="heart-4" class="hidden" />
-                  <label for="heart-4" class="heart-icon"></label>
+                  <div class="heart-icon">
+                    <i class="far fa-heart"></i>
+                    <!-- Cœur vide -->
+                    <i class="fas fa-heart"></i>
+                    <!-- Cœur plein -->
+                  </div>
                 </div>
               </div>
             </article>
@@ -193,7 +214,7 @@
             <a href="">Devenir partenaire</a>
           </div>
           <a href="">Mentions légales</a>
-          <a href="">Contact</a>
+          <a href="mailto:contact@ohmyfood.com">Contact</a>
         </div>
       </div>
     </footer>
