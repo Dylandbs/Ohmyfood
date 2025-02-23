@@ -14,10 +14,9 @@
 
 ## Technologies utilisées
 
-- **HTML5** : Structure sémantique du site.
+- **HTML5** : Structure du site.
 - **CSS3** : Styles et animations avancées.
 - **Sass** : Préprocesseur CSS pour une gestion modularisée des styles.
-- **Git** : Gestion de version.
 - **GitHub** : Hébergement du code source.
 
 ---
